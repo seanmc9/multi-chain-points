@@ -4,7 +4,7 @@ pragma solidity ^0.8.19;
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract POINTS is ERC20, Ownable {
+contract MULTICHAIN_POINTS is ERC20, Ownable {
     uint256 public MAX_SUPPLY;
     uint256 public MINT_INCREMENT;
     uint256 public constant PRICE_PER_HUNDRED_TOKENS = 0.0001 ether;
