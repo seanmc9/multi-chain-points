@@ -9,13 +9,13 @@ contract POINTS is ERC20, Ownable {
     uint256 public MINT_INCREMENT;
     uint256 public constant PRICE_PER_HUNDRED_TOKENS = 0.0001 ether;
 
-    constructor(address initialOwner)
+    constructor()
         ERC20("POINTS", "POINTS")
         Ownable()
     {
         MAX_SUPPLY = 1000000000 * 10 ** decimals();
         MINT_INCREMENT = 100 * 10 ** decimals();
-        _mint(initialOwner, 1000000 * 10 ** decimals());
+        _mint(owner(), 1000000 * 10 ** decimals());
     }
 
     /**
