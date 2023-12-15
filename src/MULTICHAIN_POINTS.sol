@@ -13,7 +13,7 @@ contract MULTICHAIN_POINTS is ERC20, Ownable {
         ERC20("POINTS", "POINTS")
         Ownable()
     {
-        MAX_SUPPLY = 1000000000 * 10 ** decimals();
+        MAX_SUPPLY = 250000000 * 10 ** decimals();
         MINT_INCREMENT = 100 * 10 ** decimals();
         _mint(owner(), 1000000 * 10 ** decimals());
     }
