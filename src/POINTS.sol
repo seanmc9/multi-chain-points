@@ -11,7 +11,7 @@ contract POINTS is ERC20, Ownable {
 
     constructor(address initialOwner)
         ERC20("POINTS", "POINTS")
-        Ownable(initialOwner)
+        Ownable()
     {
         MAX_SUPPLY = 1000000000 * 10 ** decimals();
         MINT_INCREMENT = 100 * 10 ** decimals();
